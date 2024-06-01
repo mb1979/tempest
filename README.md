@@ -70,4 +70,4 @@ cat >/etc/telegraf/telegraf.d/out_influx.conf <<EOF
 EOF
 ```
 
-*Please note: there's a delay of several minutes for the data to appear in the InfluxDb, even though the python script will provide the data in real-time. I've already tried to change the `buffer_size` parameter in the `inputs.execd` section unsuccessfully. It looks as if it has to do with the `inputs.execd` section as `outputs.influxdb` *
+*Please note: there's a delay of several minutes for the data to appear in the InfluxDb, even though the python script will provide the data in real-time. I've already tried to change the `buffer_size` parameter in the `inputs.execd` section unsuccessfully. It looks as if it has to do with the `inputs.execd` section as `outputs.influxdb`*
