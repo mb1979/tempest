@@ -2,10 +2,12 @@
 
 ## Description
 
-This is just a small program which will listen for UDP broadcast messages from the Weatherflow Tempest Hub and produce InfluxDb line protocol, which can afterwards be handeled by Telegraf.
+tempest.py is just a small program which will listen for UDP broadcast messages from the Weatherflow Tempest Hub and produce InfluxDb line protocol, which can afterwards be handeled by Telegraf.
 
 The implementation has been done according the [Weatherflow Tempest UDP Reference v171](https://weatherflow.github.io/Tempest/api/udp/v171/).
 Message types irrelevant for the Tempest station (such as obs_air and obs_sky) haven't been implemented.
+
+The corresponding Grafana dashboard has been added (grafana_dashboard.json), which can easily be imported when creating a new dashboard.
 
 
 ## Parameters
